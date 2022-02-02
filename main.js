@@ -9,15 +9,11 @@ while (!finished) {
 
     if (resp.toLowerCase() == "finish") {
         finished = true;
-        console.log('Here is your shopping list.');
-        console.log(shopping);
-    
+            console.log('Here is your shopping list.');
+            console.log(shopping);
     } else {
         shopping.push(resp)
     }
-
     }
-
 }
-
 main();
