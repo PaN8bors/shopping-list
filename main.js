@@ -7,11 +7,11 @@ async function main() {
 while (!finished) {
     const resp = await input.text('Enter an item (or "finish")');
 
-    if (resp == "finish") {
-        (finished == true);
+    if (resp.toLowerCase() == "finish") {
+        finished = true;
         console.log('Here is your shopping list.');
         console.log(shopping);
-        break
+    
     } else {
         shopping.push(resp)
     }
